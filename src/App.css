@@ -55,7 +55,7 @@ h1 {
   color: #ff0000;
 }
 
-.day{
+.day {
   color: #ff0000;
 }
 
@@ -67,4 +67,14 @@ h1 {
   text-transform: uppercase;
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#ebebeb;
+  color:dimgray;
+  text-align: center;
 }

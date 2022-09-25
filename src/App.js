@@ -8,7 +8,8 @@ const App = () => {
 
   const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
 
-  const targetDateFromLocalStorage = JSON.parse(localStorage.getItem("targetDate")) || dateTimeAfterThreeDays;
+  const targetDateFromLocalStorage =
+    JSON.parse(localStorage.getItem("targetDate")) || dateTimeAfterThreeDays;
 
   const [targetDate, setTargetDate] = useState(
     new Date(targetDateFromLocalStorage)
@@ -40,6 +41,18 @@ const App = () => {
         />
       </form>
       <CountdownTimer targetDate={targetDate} />
+      <div className="footer">
+        <p>
+          Created by Souptik for Shreyasi |{" "}
+          <a
+            href="https:github.com/souptik5/countdown-timer"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+        </p>
+      </div>
     </div>
   );
 };
