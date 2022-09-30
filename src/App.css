@@ -1,9 +1,110 @@
-h1 {
+.app {
+  background-color: #17171b;
+  min-height: 110vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.info {
+  color: lavenderblush;
+}
+
+.menu {
+  display: flex;
+  padding: 1rem 2rem;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.menu > button {
+  border-radius: 1.5rem;
+  max-height: max-content;
+  margin: 0rem 0.2rem;
+  padding: 0.5rem 1rem;
   text-align: center;
+  white-space: nowrap;
+  background-color: #9292e4;
+  color: lavenderblush;
+  border: 0rem;
+  font-weight: bold;
+}
+
+.tab-buttons {
+  background-color: #9292e4;
+  color: lavenderblush;
+}
+
+.tab-card {
+  background-color: #27272c;
+  margin: 1rem 2rem;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.currdate {
+  color: lavenderblush;
+}
+
+.heading {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: lavenderblush;
+  font-weight: 200;
+  font-size: 1.8rem;
+  margin-top: 0%;
+}
+
+.utility {
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+  flex-wrap: wrap;
+}
+
+.days-card-content {
+  display: flex;
+  justify-content: center;
+  font-weight: 200;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding: 0.7rem;
+  text-decoration: none;
+  color: lavenderblush;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.days-card-content-body {
+  margin: 0px;
 }
 
 .form {
   text-align: center;
+}
+.form > label {
+  color: lavenderblush;
+}
+
+#countdown-date-time {
+  min-height: 2rem;
+  border-radius: 50px;
+  padding: 0rem 1.2rem;
+  background-color: #27272c;
+  color: lavenderblush;
+  border: solid;
+  border-width: thin;
 }
 
 .expired-notice {
@@ -43,16 +144,30 @@ h1 {
   color: #000;
 }
 
+.countdown-link > p {
+  color: #ebebeb;
+}
+
 .show-counter .countdown {
   line-height: 1.25rem;
   padding: 0 0.75rem 0 0.75rem;
   align-items: center;
   display: flex;
   flex-direction: column;
+  color: lavenderblush;
 }
 
 .show-counter .countdown.danger {
   color: #ff0000;
+}
+
+.days-card {
+  background-color: #27272c;
+  min-height: 10rem;
+  width: 46%;
+  border-radius: 20px;
+  margin: 0.3rem;
+  border: 1px solid #36363b;
 }
 
 .day {
@@ -70,11 +185,11 @@ h1 {
 }
 
 .footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color:#ebebeb;
-  color:dimgray;
+  background-color: #17171b;
+  color: dimgray;
   text-align: center;
 }

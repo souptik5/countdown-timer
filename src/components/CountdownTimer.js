@@ -1,5 +1,5 @@
 import React from "react";
-import { useCountdown } from "./hooks/useCountdown";
+import { useCountdown } from "../hooks/useCountdown";
 import DateTimeDisplay from "./DateTimeDisplay";
 
 const ExpiredNotice = () => {
@@ -14,17 +14,7 @@ const ExpiredNotice = () => {
 const ShowCounter = ({ days, hours, minutes, seconds }) => {
   return (
     <div className="show-counter">
-    <div className="countdown-link">
-        <p className="day">{days}&nbsp;</p>
-        <p>days remaining for UPSC Prelims</p>
-    </div>
-    <br/>
-      <a
-        href="https://www.github.com/souptik5"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="countdown-link"
-      >
+      <div className="countdown-link">
         <DateTimeDisplay value={days} type={"Days"} isDanger={days <= 3} />
         <p>:</p>
         <DateTimeDisplay value={hours} type={"Hours"} isDanger={false} />
@@ -32,7 +22,7 @@ const ShowCounter = ({ days, hours, minutes, seconds }) => {
         <DateTimeDisplay value={minutes} type={"Mins"} isDanger={false} />
         <p>:</p>
         <DateTimeDisplay value={seconds} type={"Seconds"} isDanger={false} />
-      </a>
+      </div>
     </div>
   );
 };

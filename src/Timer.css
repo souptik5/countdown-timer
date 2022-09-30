@@ -1,0 +1,46 @@
+.app-1 {
+  /* background-color: #0e4d92; */
+  margin: 0 auto;
+  width: 300px;
+  height: 150px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.app-1 > h3 {
+  color: white;
+  text-align: center;
+  letter-spacing: 1.2px;
+  font-weight: 500;
+}
+
+.stopwatch-card > p {
+  font-size: 1.5rem;
+}
+
+.stopwatch-card {
+  position: absolute;
+  text-align: center;
+  color: lavenderblush;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buttons > button {
+  outline: none;
+  background: transparent;
+  border: 1px solid #9292e4;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #9292e4;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
