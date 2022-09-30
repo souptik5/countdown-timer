@@ -67,13 +67,13 @@ const App = () => {
         <InfoRoundedIcon className="info" />
       </div>
       <p className="heading">
-        Hi, <b>Souptik</b>.<br />
+        Hi, <b>Shreyasi</b>.<br />
         {greeting}.
       </p>
       <div className="utility">
         <DayCounter targetDate={targetDate} />
         <TotalTimeWidget totalTime={totalTime} />
-        <DayCounter targetDate={targetDate} />
+        
       </div>
 
       <Tabs size="sm" defaultValue={0}>
@@ -118,7 +118,7 @@ const App = () => {
 
       <div className="footer">
         <p>
-          Created by Souptik 2022 |{" "}
+          Created by Souptik for Shreyasi 2022 |{" "}
           <a
             href="https://github.com/souptik5/countdown-timer"
             target="_blank"
