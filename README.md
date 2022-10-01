@@ -1,2 +1,2 @@
 # countdown-timer
-A countdown timer progressive web app customized according to the client requirement.
+A Study Management progressive web app for students, which can help them to track and monitor their progress.
